@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="398630228993-ordnua69iddv83ntt166bmb1aeeqmtsl.apps.googleusercontent.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="left">
+            <h2><span style="color:red;">Bitz</span><span style="color:white;">Mag</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <span class="bottom-span-text">Non velit, dolorum tempora sed commodi ex repudiandae iste alias veniam veritatis, nulla laudantium doloremque autem esse sit recusandae explicabo. Labore, eveniet.</span>
+        </div>
+
+        <form id="login-form">
+            <div class="right">
+                <h2>Log In</h2>
+                <p>Enter your credentials to access your account</p>
+
+                <div class="input-box">
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email">
+                </div>
+
+                <div class="input-box">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                </div>
+
+                <div class="remember-me">
+                    <div class="remember-input-box">
+                        <input type="checkbox" name="checkbox" id="checkbox">
+                        <label for="remember">Remember me for 30 days</label>
+                    </div>
+                    <a href="">Forgot Password?</a>
+                </div>
+
+                <button id="submit-btn">Log into Account</button>
+
+                <div class="line-container">
+                    <hr>
+                    <span class="or">or</span>
+                    <hr>
+                </div>
+
+                <div class="oauth-btns">
+                    <div class="login-with-google-btn">
+                        <img src="https://lh3.googleusercontent.com/COxitqgJr1sJnIDe8-jiKhxDx1FrYbtRHKJ9z_hELisAlapwE9LUPh6fcXIfb5vwpbMl4xl9H9TRFPc5NOO8Sb3VSgIBrfRYvW6cUA" alt="" class="google-img">
+                        <a type="button" id="googleSignIn" data-onsuccess="onSignIn">Continue with Google</a>
+                    </div>
+                    <div class="login-with-twitter-btn">
+                        <img src="https://cdn-icons-png.freepik.com/256/11023/11023609.png?semt=ais_hybrid" alt="">
+                        <a href="#" type="button">Continue with Twitter</a>
+                    </div>
+                </div>
+
+                <footer>Are you new here? <span><a href="">Create Account</a></span></footer>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        // function onSignIn(googleUser) {
+        //     var profile = googleUser.getBasicProfile();
+        //     console.log('ID: ' + profile.getId());
+        //     console.log('Name: ' + profile.getName());
+        //     console.log('Image URL: ' + profile.getImageUrl());
+        //     console.log('Email: ' + profile.getEmail());
+        //     // You can also send this data to your server if needed
+        // }
+
+        // function initGoogleSignIn() {
+        //     gapi.load('auth2', function() {
+        //         gapi.auth2.init({
+        //             client_id: '398630228993-ordnua69iddv83ntt166bmb1aeeqmtsl.apps.googleusercontent.com' // Replace with your client ID
+        //         }).then(function(auth2) {
+        //             document.querySelector('#googleSignIn').addEventListener('click', (e) => {
+        //                 event.preventDefault();
+        //                 auth2.signIn().then(onSignIn);
+        //             })
+        //         });
+        //     });
+        // }
+
+        // window.addEventListener('load', function() {
+        //     if (typeof gapi !== 'undefined') {
+        //         initGoogleSignIn();
+        //     } else {
+        //         console.error('Google API script failed to load');
+        //     }
+        // });
+    </script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

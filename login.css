@@ -1,0 +1,228 @@
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    div.login-container {
+        display: flex;
+    }
+    
+    div.left {
+        box-sizing: border-box;
+        background-image: url('../vendor/images/woman.jpg');
+        max-width: 45vw;
+        height: auto;
+        overflow: hidden;
+        background-size: cover;
+        border-radius: 10px;
+        background-repeat: no-repeat;
+        margin: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    div.left::before {
+        content: '';
+        position: absolute;
+        max-width: 45vw;
+        height: 137vh;
+        margin: 20px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        z-index: 1;
+    }
+    
+    div.left h2 {
+        position: relative;
+        text-align: left;
+        padding: 10%;
+        font-stretch: expanded;
+        font-size: 24px;
+        z-index: 2;
+    }
+    
+    div.left p {
+        position: relative;
+        text-align: left;
+        padding-top: 90%;
+        padding-left: 5%;
+        padding-bottom: 5%;
+        max-width: 40vw;
+        color: white;
+        font-stretch: expanded;
+        font-size: 24px;
+        z-index: 2;
+    }
+    
+    div.left .bottom-span-text {
+        position: relative;
+        text-align: left;
+        padding-left: 5%;
+        padding-bottom: 5%;
+        white-space: normal;
+        color: white;
+        z-index: 2;
+        display: block;
+    }
+    
+    form#login-form {
+        margin: 10%;
+    }
+    
+    div.right h2,
+    div.right p {
+        padding-block: 2%;
+    }
+    
+    div.right p {
+        color: grey;
+        padding-bottom: 10%;
+    }
+    
+    .input-box label {
+        display: block;
+        padding-block: 3%;
+    }
+    
+    .input-box input {
+        width: 120%;
+        height: 4vh;
+        border: 1px solid grey;
+        outline: none;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    
+    .input-box input:focus {
+        width: 120%;
+        height: 4vh;
+        border: 1px solid #fa9874;
+        outline: none;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    
+    .remember-me {
+        display: flex;
+        width: 120%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .remember-me input {
+        margin-right: 10px;
+    }
+    
+    .remember-me label {
+        flex-grow: 1;
+        text-align: center;
+        font-weight: light;
+    }
+    
+    .remember-me a {
+        text-align: right;
+        margin-left: 10px;
+        font-weight: light;
+        color: #eb5017;
+        text-decoration: none;
+    }
+    
+    div.right button {
+        width: 126%;
+        margin-top: 3%;
+        border: 1px solid #eb5017;
+        outline: none;
+        border-radius: 5px;
+        padding: 10px;
+        background-color: #eb5017;
+        color: white;
+        font-size: large;
+    }
+    
+    .line-container {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin: 20px 0;
+        width: 130%;
+    }
+    
+    .line-container hr {
+        flex-grow: 1;
+        border: none;
+        border-top: 1px solid #ccc;
+        margin: 0 10px;
+    }
+    
+    .or {
+        padding: 0 10px;
+        font-weight: bold;
+        color: #555;
+    }
+    
+    .oauth-btns {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .oauth-btns .login-with-google-btn,
+    .oauth-btns .login-with-twitter-btn {
+        width: 130%;
+        display: block;
+        cursor: pointer;
+        margin-block: 10px;
+        border: 1px solid gray;
+        box-sizing: border-box;
+        padding: 10px;
+        text-align: center;
+        border-radius: 10px;
+    }
+    
+    .login-with-google-btn,
+    .login-with-twitter-btn {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    .login-with-google-btn a,
+    .login-with-twitter-btn a {
+        align-items: center;
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    .oauth-btns div.login-with-google-btn img,
+    .oauth-btns div.login-with-twitter-btn img {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+    }
+    
+    .login-with-twitter-btn a,
+    .login-with-google-btn a {
+        font-weight: bold;
+        text-decoration: none;
+        color: #344054;
+        padding-left: 10px;
+    }
+    
+    footer {
+        width: 130%;
+        padding-block: 20px;
+        font-weight: light;
+        text-align: center;
+        color: grey;
+    }
+    
+    footer span a {
+        color: #eb5017;
+        font-weight: bold;
+        text-decoration: none;
+    }
