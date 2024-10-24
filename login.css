@@ -10,7 +10,7 @@
     
     div.left {
         box-sizing: border-box;
-        background-image: url('../vendor/images/woman.jpg');
+        background-image: url('woman.jpg');
         max-width: 45vw;
         height: auto;
         overflow: hidden;
